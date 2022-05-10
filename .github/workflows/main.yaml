@@ -37,15 +37,15 @@ jobs:
           - uses: bluenovaio/action-slack@main 
             with:
               payload: |
-            {
-              "text": "SA54 Submission",
-              "blocks": [
                 {
-                  "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "Name: Jiang Hanlin \n Matriculation: A0249466N \n Email: 1213452923@qq.com \n Repo: ${{github.repositoryUrl}} \n Image Name: checetudou/randnum:v1 \n Image url: https://hub.docker.com/repository/docker/e0941659/randnum"
-                  }
+                  "text": "SA54 Submission",
+                  "blocks": [
+                    {
+                      "type": "section",
+                      "text": {
+                        "type": "mrkdwn",
+                        "text": "Name: Jiang Hanlin \n Matriculation: A0249466N \n Email: 1213452923@qq.com \n Repo: ${{github.repositoryUrl}} \n Image Name: checetudou/randnum:v1 \n Image url: https://hub.docker.com/repository/docker/e0941659/randnum"
+                      }
+                    }
+                  ]
                 }
-              ]
-            }
