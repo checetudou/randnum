@@ -34,7 +34,7 @@ jobs:
       - name: Send a Message 
         runs-on: ubuntu-latest
         steps:
-          - uses: bluenovaio/action-slack@main 
+          - uses: slackapi/slack-github-action@v1.0 
             with:
               payload: |
                 {
