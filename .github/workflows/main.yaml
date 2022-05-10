@@ -33,12 +33,13 @@ jobs:
       # https://github.com/marketplace/actions/slack-webhook
       - name: Send a Message 
         runs-on: ubuntu-latest
+        id: slack
         steps:
-          - uses: slackapi/slack-github-action@v1.0 
+          - uses: slackapi/slack-github-action@v1.18.0
+
             with:
               payload: |
                 {
-                  "text": "SA54 Submission",
                   "blocks": [
                     {
                       "type": "section",
