@@ -32,7 +32,6 @@ jobs:
 
       # https://github.com/marketplace/actions/slack-webhook
       - name: Send a Message 
-        runs-on: ubuntu-latest
         id: slack
         steps:
           - uses: slackapi/slack-github-action@v1.18.0
