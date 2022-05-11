@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: e0941659/randnum:v1.0
+          tags: e0941659/randnum:${{ github.ref_name }} 
 
       # https://github.com/marketplace/actions/slack-webhook
       - name: Send a Message 
